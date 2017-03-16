@@ -3,8 +3,8 @@ import json
 import requests
 import os
 import random
-
-dest='/home/eric/Pictures/wallpaper/'
+user='username'
+dest='/home/{0}/Pictures/wallpaper/'.format(user)
 subreddit='wallpaper'
 baseurl = 'http://imgur.com'
 r = requests.get(baseurl + '/r/%s/top.json' % subreddit)

@@ -1,6 +1,6 @@
 #! /bin/bash
-wallpapers=($(find /home/eric/Pictures/wallpaper -type f))
-wallpapers+=($(find /home/eric/Pictures/saved_wallpaper -type f))
+wallpapers=($(find /home/$USER/Pictures/wallpaper -type f))
+wallpapers+=($(find /home/$USER/Pictures/saved_wallpaper -type f))
 nextWallpaper=${wallpapers[$RANDOM % ${#wallpapers[@]} ]}
 
 echo $nextWallpaper
