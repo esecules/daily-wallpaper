@@ -3,7 +3,7 @@ import json
 import requests
 import os
 import random
-user='username'
+user='username' # this will get configured by the installer
 dest='/home/{0}/Pictures/wallpaper/'.format(user)
 subreddit='wallpaper'
 baseurl = 'http://imgur.com'
